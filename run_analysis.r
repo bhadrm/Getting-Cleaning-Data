@@ -6,7 +6,7 @@ fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%2
 download.file(fileUrl,destfile="./Data_Download/Dataset.zip")
 
 # Unzip dataSet to /Data_Download directory
-unzip(zipfile="./data/Dataset.zip",exdir="./data")
+unzip(zipfile="./Data_Download /Dataset.zip",exdir="./Data_Download ")
 
 
 # Reading trainings tables:
@@ -23,7 +23,7 @@ subject_test <- read.table("./Data_Download/UCI HAR Dataset/test/subject_test.tx
 features <- read.table('./Data_Download/UCI HAR Dataset/features.txt')
 
 # Reading activity labels:
-activityLabels = read.table('./data/UCI HAR Dataset/activity_labels.txt')
+activityLabels = read.table('./Data_Download /UCI HAR Dataset/activity_labels.txt')
 
 # Assigning column names:
 colnames(x_train) <- features[,2] 
